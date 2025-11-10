@@ -28,7 +28,7 @@ int main()
     objp.pc.threads = 15;
     objp.pc.err_goal = 1e-8;
 
-    Global_Classic *pso = Global_Classic_Init(p, 1e-5);
+    Global_Classic *pso = Global_Classic_Init(p, 1e-6);
 
     if (pso == nullptr)
     {

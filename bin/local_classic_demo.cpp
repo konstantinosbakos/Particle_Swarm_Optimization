@@ -37,7 +37,7 @@ int main()
     objp.pc.threads = 15;
     objp.pc.err_goal = 1e-8;
 
-    Local_Classic *pso = Local_Classic_Init(p, ep, 1e-5);
+    Local_Classic *pso = Local_Classic_Init(p, ep, 1e-6);
 
     if (pso == nullptr)
     {

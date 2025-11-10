@@ -33,7 +33,7 @@ int main()
     objp.pc.threads = 15;
     objp.pc.err_goal = 1e-8;
 
-    Deflection *pso = Deflection_Init(p, ep, 1e-5, 50, 0, 100, false, false, true);
+    Deflection *pso = Deflection_Init(p, ep, 1e-6, 50, 0, 100, false, false, true);
 
     if (pso == nullptr)
     {

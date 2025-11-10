@@ -12,7 +12,7 @@ As a demo objective function, a minimization function in a Poincaré Surface Sec
 
 It is important to note that the parameters of PSO and the Objective function have to be correctly tuned in order for the algorithm to correctly converge and identify global (or local) minima. If the parameters are not set correctly the algorithm may have undefined behaviours like not converging to a minimum or converging only to one minimum, unable to further explore the defined space.
 
-Pso may also work with objective functions that locate maxima instead of minima in a space.
+PSO may also work with objective functions that locate maxima instead of minima in a space.
 
 ## Algorithm variants
 
@@ -73,10 +73,8 @@ The parameters can be defined using the structure templates found in the header 
 |resolution | The resolution defines how much the space will be disected              |
 |batch_size | How many threads will run at the same time                              |
 |dest       | The destination folder for the output of the program                    |
-|type       | The algorithm variant that will be used, either 'Classic' or 'Classic++'|
-|objp       | A struct with defined objective function parameters                     |
-|ep         | A struct with defined enhanced parameters (if `Classic++` is used)      |
-|p          | A struct with defined PSO parameters                                    |
+|type       | The algorithm variant that will be used, either `Global_Classic` or `Local_Classic`|
+|gp          | A struct with PSO, Enhanced and Objective Function parameters          |
 
 - Objective Function Parameters
     - Poincare Parameters
@@ -111,11 +109,9 @@ To compile the demo version, execute `make all` in the `/bin` folder if the envi
 
 # Testing and Production Environment
 
-The testing and production of this project was done in Linux Ubuntu 22.04 and in MACOS version 15.5. The program was compiled using g++ 11.4.0 in Linux and the native clang++ compiler in MACOS (version 17.0.0 as of the publication of the project).
+The testing and production of this project was done on Linux Ubuntu 22.04 and on MACOS version 15.5. The program was compiled using g++ 11.4.0 in Linux and the native clang++ compiler in MACOS (version 17.0.0 as of the publication of the project).
 
 # Credits
 
 - [Publication]
 - [Foivos Zanias](https://github.com/phyzan), for the creation of the [ODE pack](https://github.com/phyzan/odepack) used for the implementation of this project, as well as insights for the general implementation.
-
-check variable names and fix (lclc) and params ig

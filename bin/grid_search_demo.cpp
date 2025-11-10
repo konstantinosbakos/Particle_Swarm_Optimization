@@ -38,7 +38,7 @@ int main()
 
     Poincare<MP_REAL, MPFR_ARR, MPFR_VEC> *dummy_poincare = new Poincare<MP_REAL, MPFR_ARR, MPFR_VEC>(objp.pc);
 
-    dummy_poincare->print_results(grid_search(gp, 1e-5, 100, "Poincare"));
+    dummy_poincare->print_results(grid_search(gp, 1e-6, 100, "Poincare"));
 
     delete dummy_poincare;
     dummy_poincare = nullptr;
